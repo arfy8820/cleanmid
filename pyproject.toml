@@ -1,0 +1,24 @@
+[project]
+name = "cleanmid"
+version = "0.1.0"
+description = "A utility to remove events from a midi file for import into a DAW."
+authors = [
+    {name = "Arthur Pirika", email = "arfy32@gmail.com"},
+]
+dependencies = [
+    "libmidi>=1.1.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[project.scripts]
+cleanmid = "cleanmid.cleanmid:run"
