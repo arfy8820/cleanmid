@@ -1,0 +1,8 @@
+#! /bin/zsh
+
+echo Installing cleanmid using python and pdm.
+brew install pdm pipx
+pdm update
+pdm install
+pdm build
+pipx install dist/cleanmid-0.1.0-py3-none-any.whl
